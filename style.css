@@ -1,0 +1,272 @@
+/*CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*My Style*/
+:root {
+  --verypaleblue: hsl(225, 100%, 98%);
+  --dsaturatedblue: hsl(224, 23%, 55%);
+  --darkblue: hsl(223, 47%, 23%);
+  --paleblue: hsl(225, 100%, 94%);
+  --brightblue: hsl(245, 75%, 52%);
+  --bg: url();
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-color: var(--paleblue);
+  background-image: url(./images/pattern-background-desktop.svg);
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  width: 380px;
+  margin: 100px auto;
+  padding-bottom: 0.3rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  padding: 0;
+}
+
+.text {
+  text-align: center;
+  margin: 2rem 1rem 1rem;
+}
+
+.text h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 1rem 0;
+  color: var(--darkblue);
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: var(--dsaturatedblue);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--verypaleblue);
+  padding: 0.5rem 1.3rem;
+  margin: 1.5rem 2rem;
+  border-radius: 0.8rem;
+}
+
+span {
+  background-image: url(./images/icon-music.svg);
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+}
+
+.price-list {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.price-list h1 {
+  font-weight: 900;
+  color: var(--darkblue);
+}
+
+.price-list p {
+  color: var(--dsaturatedblue);
+}
+
+.price a {
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--brightblue);
+}
+
+.price a:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.7);
+}
+
+.button {
+  margin: 2rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button .confirm {
+  background-color: var(--brightblue);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.button .confirm:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+}
+
+.button .cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--dsaturatedblue);
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.button .cancel:hover {
+  color: black;
+}
